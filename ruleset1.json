@@ -2267,5 +2267,228 @@
     "action": {
       "type": "block"
     }
+ },
+
+ {
+    "id": 189,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "||error-tracking.reddit.com"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 190,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["ping", "xmlhttprequest"],
+      "urlFilter": "||log.strm.yandex.ru"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 191,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["ping"],
+      "urlFilter": "https://yandex.ru/clck/click"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 192,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script", "image"],
+      "urlFilter": "||mc.yandex.ru"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 193,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "https://strm.yandex.ru/ping"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 194,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest", "script"],
+      "urlFilter": "https://yandex.ru/ads/*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 195,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["image"],
+      "regexFilter": "https:\/\/shedevrum.ai\/.{9}\/.{9}\/*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 196,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["other"],
+      "urlFilter": "||csp.yandex.net"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 197,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "https://translate.googleapis.com/element/log*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 198,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "https://yastatic.net/pcode/adfox/loader.js"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+  "id": 199,
+  "priority": 1,
+  "action": {
+    "type": "redirect",
+    "redirect": {
+      "transform": {
+        "queryTransform": {
+          "removeParams":["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
+        }
+      }
+    }
+  },
+  "condition": {
+    "urlFilter":"|",
+    "resourceTypes": ["main_frame", "sub_frame"]
+  }
+ },
+
+ {
+    "id": 200,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "https://consent.trustarc.com/analytics*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 201,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "||perf.bblmw.com"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 202,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script"],
+      "urlFilter": "||dwin1.com"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 203,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["ping"],
+      "urlFilter": "||fluentd.bblops.com"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 204,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "||event.bblmw.com"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 205,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["image"],
+      "urlFilter": "https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 206,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest", "script"],
+      "urlFilter": "||live.demand.supply"
+    },
+    "action": {
+      "type": "block"
+    }
  }
 ]
