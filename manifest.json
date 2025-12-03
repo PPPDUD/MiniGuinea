@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "MiniGuinea",
-  "version": "0.7.0",
-  "description": "A simple ad blocker that uses Manifest v3.",
+  "version": "0.8.0",
+  "description": "Eats ads and trackers so that you don't have to.",
   "permissions": [
     "declarativeNetRequest"
   ],
@@ -19,5 +19,9 @@
       "id": "ruleset1",
       "enabled": true,
       "path": "ruleset1.json"
-    }]}
+    }]},
+
+  "host_permissions": [
+    "<all_urls>"
+  ]
 }
