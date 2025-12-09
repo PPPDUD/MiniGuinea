@@ -2490,5 +2490,29 @@
     "action": {
       "type": "block"
     }
+ },
+
+ {
+    "id": 207,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest", "ping"],
+      "urlFilter": "||g.ezoic.net"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 208,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "||g.ezoic.net"
+    },
+    "action": {
+      "type": "block"
+    }
  }
 ]
