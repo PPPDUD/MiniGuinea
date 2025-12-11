@@ -48,4 +48,4 @@ On MiniGuinea v0.1, there is a missing icon file which makes installation imposs
 
 In MiniGuinea versions predating v0.6, you cannot view your Google Analytics dashboard properly. A fix was made during early development, but somehow got dropped from the codebase before v0.1 was released. An improved fix is available in v0.6 and later.
 
-A bug has been discovered in MiniGuinea versions v0.4 through v0.6, preventing parts of the New York Post website from loading properly. A fix has been developed and will become available in v0.7.
+A bug has been discovered in MiniGuinea versions v0.4 through v0.6, preventing parts of the New York Post website from loading properly. A fix has been developed and has been available since v0.7.
