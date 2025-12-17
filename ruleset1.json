@@ -2397,7 +2397,7 @@
     "redirect": {
       "transform": {
         "queryTransform": {
-          "removeParams":["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"]
+          "removeParams":["tag", "asc_refurl", "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "ref", "gs_lcrp"]
         }
       }
     }
@@ -2514,5 +2514,60 @@
     "action": {
       "type": "block"
     }
+ },
+
+ {
+    "id": 209,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script"],
+      "urlFilter": "https://www.ai.mil/DesktopModules/Slideshow/Resources/js/analyticsParamsForDVIDSAnalyticsAPI.js"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 210,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script"],
+      "urlFilter": "https://www.ai.mil/Desktopmodules/SharedLibrary/Plugins/DVIDSAnalytics/DVIDSVideoAnalytics.min.js*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+    "id": 211,
+    "priority": 1,
+    "condition": {
+      "resourceTypes": ["script"],
+      "urlFilter": "https://www.ai.mil/Desktopmodules/SharedLibrary/Plugins/GoogleAnalytics/Universal-Federated-Analytics-8.7.js*"
+    },
+    "action": {
+      "type": "block"
+    }
+ },
+
+ {
+  "id": 212,
+  "priority": 2,
+  "action": {
+    "type": "redirect",
+    "redirect": {
+      "transform": {
+        "queryTransform": {
+          "removeParams":["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content", "gs_lcrp", "client", "ei", "ved", "sclient"]
+        }
+      }
+    }
+  },
+  "condition": {
+    "urlFilter":"https://www.google.com/search*",
+    "resourceTypes": ["main_frame", "sub_frame"]
+  }
  }
 ]
