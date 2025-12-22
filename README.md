@@ -7,7 +7,7 @@ MiniGuinea is a simple Chromium extension that:
 - Uses Manifest v3 (if you don't know what this means, don't worry about it)
 - Avoids interfering with the user experience as much as possible
 - Makes some websites load faster by blocking unwanted web requests
-- Blocks some tracker parameters in URLs (since 0.8, currently experimental)
+- Blocks some tracker parameters in URLs
 
 MiniGuinea is known to work in Chromium, Google Chrome, and Microsoft Edge. It should function properly in most other Chromium browsers too.
 
@@ -42,6 +42,11 @@ MiniGuinea does not officially support Firefox-based browsers (Firefox, Tor Brow
 *Ghostery appears to be injecting its own script here. More information is needed.
 
 **This tracker appears to be capable of evading MiniGuinea in some situations. Research is underway.
+
+## A note about tracking parameters
+Some URLs contain pieces of text designed to help websites figure out who you are; these are called _tracking parameters_. Since version 0.8, MiniGuinea will remove most common tracking parameters on its own.
+
+If you need extra protection, please consider installing another extension that removes these parameters.
 
 # Known issues
 On MiniGuinea v0.1, there is a missing icon file which makes installation impossible. Starting with MiniGuinea v0.2, all of the icon files are in place.
